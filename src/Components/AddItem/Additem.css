@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    font-size: calc(10px + 2vmin);
+}
+
+/* .barCont / form  / #name #age .submit*/
+.barCont{
+    /* background-color: rgb(119, 197, 18); */
+    padding: 3vmin 0;
+
+
+}
+
+#name ,#age {
+    border-top-left-radius: 10px;
+    padding-left: 10px;
+    margin-top: 1rem;
+    
+
+}
+.inputt:focus {
+    box-shadow: 0px 10px 20px palegoldenrod;
+
+    
+
+}
+
+.submit{
+    border-radius: 10px;
+    width: 12vmin;
+    margin-top:1rem;
+    
+}
+
+.submit:hover{
+    box-shadow: 0px 10px 20px palegoldenrod;
+
+
+}
+/* on narrow screen / mobile*/
+@media only screen and (max-width:400px){
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .submit{
+        width: 80px;
+        text-align: center;
+    }
+}
